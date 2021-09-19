@@ -3,7 +3,7 @@
     {{#each @model.cars as |car|}}
     <div class="col">
       <CarCard::Index @make={{car.make}} @carmodel={{car.model}} @imageSrc={{car.vehicleUrl}} @year={{car.year}}
-        @company={{car.company}} />
+        @company={{car.company}} @price={{car.price}} />
     </div>
     {{/each}}
   </div>
