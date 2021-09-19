@@ -1,1 +1,10 @@
-Cars
+<div class="container">
+  <div class="row">
+    {{#each @model.cars as |car|}}
+    <div class="col">
+      <CarCard::Index @make={{car.make}} @carmodel={{car.model}} @imageSrc={{car.vehicleUrl}} @year={{car.year}}
+        @company={{car.company}} />
+    </div>
+    {{/each}}
+  </div>
+</div>

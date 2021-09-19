@@ -4,7 +4,7 @@
 
 .body {
  height: 80vh;
- background-color: aqua;
+ overflow-y: scroll;
 }
 .footer{
   background-color: red;
@@ -12,4 +12,9 @@
 }
 .header{
   height:10vh;
+}
+
+.car{
+  margin: 5px;
+  width: 15em;
 }
