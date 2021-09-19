@@ -1,2 +1,15 @@
 
 @import "ember-bootstrap/bootstrap";
+
+
+.body {
+ height: 80vh;
+ background-color: aqua;
+}
+.footer{
+  background-color: red;
+  height: calc(100vh - 90vh)
+}
+.header{
+  height:10vh;
+}
