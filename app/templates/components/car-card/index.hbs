@@ -1,4 +1,4 @@
-<div class="card car">
+<div class="card car ">
   <img class="card-img-top" src={{@imageSrc}} alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">{{concat @make ' ' @carmodel}}</h5>
@@ -6,6 +6,7 @@
     <div class="card-text"><strong>Year:</strong> {{@year}}</div>
     <div class="card-text text-truncate"><strong>Retailer:</strong> {{@company}}</div>
     <div class="card-text"><strong>Price:</strong> {{formatter @price}}</div>
+    <div class="card-text"><strong>Id:</strong> {{@id}}</div>
     <a href="#" class="btn btn-primary">More Detail</a>
   </div>
 </div>

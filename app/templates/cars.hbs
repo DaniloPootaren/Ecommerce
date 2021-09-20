@@ -1,9 +1,10 @@
-<Scrollable @callback={{ action loadMore}}>
+<Scrollable @callback={{ action this.loadMore}}>
 <div class="container">
   <div class="row">
-    {{#each @model.cars as |car|}}
+    {{#each @model as |car|}}
     <div class="col">
-      <CarCard::Index @make={{car.make}} @carmodel={{car.model}} @imageSrc={{car.vehicleUrl}} @year={{car.year}}
+      <CarCard::Index @id={{car.id}} @make={{car.make}} @carmodel={{car.model}} @imageSrc={{car.vehicleUrl}}
+        @year={{car.year}}
         @company={{car.company}} @price={{car.price}} />
     </div>
     {{/each}}
