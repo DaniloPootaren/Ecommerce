@@ -4,7 +4,6 @@
 
 .body {
  height: 80vh;
- overflow-y: scroll;
 }
 .footer{
   background-color: red;
@@ -17,4 +16,9 @@
 .car{
   margin: 5px;
   width: 15em;
+}
+
+.scrollable{
+  height: 100%;
+  overflow-y: scroll;
 }
